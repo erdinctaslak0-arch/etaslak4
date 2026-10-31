@@ -1,0 +1,14 @@
+{
+  "name": "mexc-trade-workflow",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-31",
+  "workflows": [
+    {
+      "name": "mexc-trade",
+      "binding": "MEXC_TRADE",
+      "class_name": "MexcTradeWorkflow",
+      "schedules": ["*/5 * * * *"]
+    }
+  ],
+  "observability": { "enabled": true }
+}
